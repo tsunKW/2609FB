@@ -1,0 +1,38 @@
+/* Swiper樣式區域 */
+.LUXEADDswiper,
+.CarouselBNswiper {
+    --swiper-navigation-size: 30px;
+    z-index: 55;
+}
+
+.CarouselBNswiper   .swiper-pagination-bullet {
+    background: #3d7d96;
+}
+
+.LUXEADDswiper       .swiper-pagination-bullet {
+    background: #ffffff;
+}
+
+.swiper-pagination {
+    width: 100%;
+    left: 0%;
+    bottom: 5%;
+    /* --swiper-pagination-color: #cf0000; */
+}
+
+.swiper-wrapper {
+    padding-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .swiper-pagination {
+        bottom: 5%;
+    }
+
+
+
+    .swiper-wrapper {
+        min-height: 50vw;
+    }
+
+}

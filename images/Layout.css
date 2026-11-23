@@ -1,0 +1,1143 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*基本*/
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+}
+
+
+/*全BOX版面*/
+.WRAPPER {
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+	min-width: 1220px;
+	overflow: hidden;
+	font-family: "微軟正黑體", "Microsoft JhengHei", Helvetica;
+	background: url(mainVisualBG.jpg)bottom center no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+.WRAPPER img {
+	border: 0px;
+	vertical-align: top;
+}
+
+.WRAPPER a {
+	text-decoration: none;
+	-webkit-tap-highlight-color: transparent
+}
+
+/*預設清單樣式*/
+.Area .list_00 ul {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+.Area .list_00 li {
+	list-style: none;
+	float: left;
+	overflow: hidden;
+}
+
+@media screen and (max-width:767px) {
+	.WRAPPER {
+		min-width: inherit;
+		background: url(mainVisualBGm.jpg)top center repeat;
+		background-size: 100%;
+		background-attachment: scroll;
+	}
+
+	.WRAPPER img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+
+/*版頭區*/
+@media screen and (min-width:768px) {
+	.Area_title {
+		height: auto;
+	}
+
+	/*編輯按鈕移動*/
+	#eWriterBtn_bt_B_000_99 {
+		margin-left: 390px !important;
+		margin-top: 200px !important;
+		z-index: 99 !important;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.Area_title {
+		height: auto;
+		margin-bottom: 0 !important;
+	}
+}
+
+/*登記贈品文案顏色_深色*/
+.danji01 .danji_box ul li .activityText .gifts span {
+	color: #940000;
+}
+
+/*版頭品入稿*/
+@media screen and (min-width:768px) {
+	.Area_title .box {
+		margin-top: 0;
+	}
+
+	.Area_title .box .PD_layout {
+		width: 94%;
+		overflow: hidden;
+		top: 0;
+		margin: auto;
+	}
+
+	.Area_title .box .PD_layout ul {
+		display: flex;
+		padding-left: 0;
+	}
+
+	.Area_title .box .PD_layout .PD_into .Price {
+		font-size: 25px !important;
+	}
+
+	.Area_title .box .PD_layout .swiper-pagination {
+		position: relative;
+		margin: 5px 0;
+	}
+}
+
+@media screen and (max-width:767px) {
+	.Area_title .box .PD_layout {
+		width: 95%;
+		overflow: hidden
+	}
+
+	.Area_title .box .PD_layout {
+		top: 0;
+		width: 96%;
+		border-radius: 3vw;
+	}
+
+	.Area_title .box .PD_layout ul {
+		display: flex;
+	}
+
+	.Area_title .box .PD_layout ul li {}
+
+	.Area_title .box .PD_layout .PD_into .Price {
+		font-size: 25px !important;
+	}
+
+	.Area_title .box .PD_layout .swiper-pagination {
+		position: relative;
+		margin: 10px auto;
+	}
+}
+
+
+/*登記*/
+@media screen and (min-width:768px) {
+	.Area_danji {}
+
+	/**區標**/
+	.Area_danji .text {
+		width: 63%;
+		margin: 0px auto;
+		background: url(item_text_001.png)top center no-repeat;
+		background-size: 100%;
+	}
+
+	.Area_danji .text .PD_layout .PD_into {
+		color: #fff;
+		position: relative;
+	}
+
+	.Area_danji .text .PD_layout .PD_into .PD_logo {
+		width: 33%;
+	}
+
+	.Area_danji .text .PD_layout .PD_into h3 {
+		width: 100%;
+		font-size: 1.5em;
+		line-height: 1em;
+		color: #000;
+		text-align: center;
+	}
+
+	.Area_danji .text .PD_layout .PD_into h5 {
+		font: bold 43px/55px "微軟正黑體", "Microsoft JhengHei", Arial, Helvetica;
+		margin-top: 27px;
+		margin-left: 34px;
+		margin-bottom: 23px;
+	}
+
+	.Area_danji {
+		width: 100%;
+	}
+
+	.Area_danji .danji_box {
+		width: 80% !important;
+		margin: 0 auto;
+	}
+
+	.Area_danji .danji_box .box_1 {
+		width: 86%;
+	}
+
+	.Area_danji .danji_box ul {}
+
+	.Area_danji .danji_box ul li {
+		margin-bottom: 0vw !important;
+	}
+
+	.Area_danji .warningTxt {
+		margin-bottom: 0;
+	}
+
+	.Area_danji .warningTxt h3 {
+		color: #000 !important;
+	}
+
+
+}
+
+@media screen and (max-width:767px) {
+	.Area_danji {}
+
+	/**區標**/
+	.Area_danji .text {
+		width: 100%;
+		margin: auto;
+		padding-top: 0vw;
+		width: 100%;
+		margin: 0px auto 0 auto;
+		background: url(item_text_001.png)top center no-repeat;
+		background-size: 100%;
+	}
+
+	.Area_danji .text .PD_layout .PD_into {
+		color: #fff;
+		position: relative;
+		margin-top: 0;
+	}
+
+	.Area_danji .text .PD_layout .PD_into .PD_logo {
+		width: 33%;
+	}
+
+	.Area_danji .text .PD_layout .PD_into h3 {
+		width: 100%;
+		font-size: 1.5em;
+		line-height: 1em;
+		color: #000;
+		text-align: center;
+	}
+
+	.Area_danji .text .PD_layout .PD_into h5 {
+		font: bold 6vw/3vw "微軟正黑體", "Microsoft JhengHei", Arial, Helvetica;
+		margin-top: 11.5vw;
+		margin-left: 2vw;
+	}
+
+
+	.Area_danji {
+		position: relative;
+		width: 100% !important;
+		margin: 0px auto 0 auto !important;
+	}
+
+	.Area_danji .Area_danji {}
+
+	.Area_danji .danji_box {
+		width: 95% !important;
+		margin: -0.5em auto 0em auto !important;
+	}
+
+	.Area_danji .danji_box .box_1 {
+		width: 96%;
+	}
+
+	.Area_danji .danji_box .box_2 {
+		margin-bottom: 2vw !important;
+	}
+
+	.Area_danji .danji_box ul {}
+
+	.Area_danji .danji_box ul li {
+		margin-bottom: 2vw !important;
+	}
+
+	.Area_danji .warningTxt {
+		margin-bottom: 0;
+	}
+
+	.Area_danji .warningTxt h3 {
+		color: #000000;
+	}
+
+
+}
+
+
+/*攻略*/
+@media screen and (min-width:768px) {
+	.Area_btn {
+		height: 100%;
+	}
+
+	/**區標**/
+	.Area_btn .text {
+		width: 63%;
+		margin: 0px auto;
+		background: url(item_text_001.png)top center no-repeat;
+		background-size: 100%;
+	}
+
+	.Area_btn .text .PD_layout .PD_into {
+		color: #fff;
+		position: relative;
+	}
+
+	.Area_btn .text .PD_layout .PD_into .PD_logo {
+		width: 33%;
+	}
+
+	.Area_btn .text .PD_layout .PD_into h3 {
+		width: 100%;
+		font-size: 1.5em;
+		line-height: 1em;
+		color: #000;
+		text-align: center;
+	}
+
+	.Area_btn .text .PD_layout .PD_into h5 {
+		font: bold 43px/56px "微軟正黑體", "Microsoft JhengHei", Arial, Helvetica;
+		margin-top: 24px;
+		margin-left: 34px;
+		margin-bottom: 32px;
+	}
+
+	/**輪播折價券 **/
+	.Area_btn .box {}
+
+	.Area_btn .box .PD_layout {
+		width: 90%;
+		margin: 0 auto;
+		overflow: hidden
+	}
+
+	.Area_btn .box .PD_layout ul {
+		display: flex;
+		height: 200px;
+	}
+
+	.Area_btn .box .PD_layout ul li {}
+
+	.Area_btn .box .PD_layout .swiper-pagination {
+		position: relative;
+		margin: 15px 0;
+	}
+
+	.Area_btn .swipwe_remove_box_style ul li {
+		background-color: #fff0 !important;
+	}
+
+
+	/*按鈕*/
+	.Area_btn .layout_btn {
+		width: 72% !important;
+		margin: 2px auto 64px auto;
+	}
+
+	.Area_btn .layout_btn ul {}
+
+	.Area_btn .layout_btn ul li:nth-child(5) {
+		left: 116px;
+	}
+
+
+}
+
+@media screen and (max-width:767px) {
+	.Area_btn {
+		height: 100%;
+	}
+
+
+	.Area_btn .PD_layout {}
+
+	.Area_btn .layout_coupon ul {
+		width: 95% !important;
+		margin: 0 auto !important;
+	}
+
+	/**區標**/
+	.Area_btn .text {
+		width: 100%;
+		margin: auto;
+		padding-top: 0vw;
+		width: 100%;
+		margin: 0px auto -2vw auto;
+		background: url(item_text_001.png)top center no-repeat;
+		background-size: 100%;
+	}
+
+	.Area_btn .text .PD_layout .PD_into {
+		color: #fff;
+		position: relative;
+		margin-top: -7vw;
+	}
+
+	.Area_btn .text .PD_layout .PD_into .PD_logo {
+		width: 33%;
+	}
+
+	.Area_btn .text .PD_layout .PD_into h3 {
+		width: 100%;
+		font-size: 1.5em;
+		line-height: 1em;
+		color: #000;
+		text-align: center;
+	}
+
+	.Area_btn .text .PD_layout .PD_into h5 {
+		font: bold 6vw/0vw "微軟正黑體", "Microsoft JhengHei", Arial, Helvetica;
+		margin-top: 13.5vw;
+		margin-left: 2vw;
+	}
+
+	/*按鈕*/
+	.Area_btn .layout_btn {
+		width: 96% !important;
+		margin: -4vw auto 22px;
+	}
+
+	.Area_btn .layout_btn ul {
+		margin-top: 0vw;
+	}
+
+	.Area_btn .layout_btn ul li {}
+
+	.Area_btn .layout_btn ul li:nth-child(5) {
+		left: 16vw;
+	}
+
+
+
+	/**輪播折價券 **/
+	.Area_btn .box {}
+
+	.Area_btn .box .PD_layout {
+		width: 95%;
+		overflow: hidden
+	}
+
+	.Area_btn .box .PD_layout ul {
+		display: flex;
+		height: 20vw;
+	}
+
+	.Area_btn .box .PD_layout ul li {}
+
+	.Area_btn .box .PD_layout .swiper-pagination {
+		position: relative;
+		margin: 1vw 0;
+	}
+
+	.Area_btn .swipwe_remove_box_style ul li {
+		background-color: #fff0 !important;
+	}
+
+	.Area_btn .layout_coupon ul {
+		width: 95% !important;
+		margin: 0 auto !important;
+	}
+
+
+
+
+
+}
+
+/*折價券*/
+@media screen and (min-width:768px) {
+	.Area_coupon {
+		height: 100%;
+		z-index: 88;
+	}
+
+	.Area_coupon .layout_coupon {}
+
+	.Area_coupon .layout_coupon ul {
+		width: 95% !important;
+		margin: 0 auto !important;
+	}
+
+	.Area_coupon .box {
+		margin-bottom: 35px;
+	}
+
+	/**區標**/
+	.Area_coupon .text {
+		width: 63%;
+		margin: 0px auto;
+		background: url(item_text_001.png)top center no-repeat;
+		background-size: 100%;
+	}
+
+	.Area_coupon .text .PD_layout .PD_into {
+		color: #fff;
+		position: relative;
+	}
+
+	.Area_coupon .text .PD_layout .PD_into .PD_logo {
+		width: 33%;
+	}
+
+	.Area_coupon .text .PD_layout .PD_into h3 {
+		width: 100%;
+		font-size: 1.5em;
+		line-height: 1em;
+		color: #000;
+		text-align: center;
+	}
+
+	.Area_coupon .text .PD_layout .PD_into h5 {
+		font: bold 43px/56px "微軟正黑體", "Microsoft JhengHei", Arial, Helvetica;
+		margin-top: 24px;
+		margin-left: 34px;
+		margin-bottom: 32px;
+	}
+
+
+
+}
+
+@media screen and (max-width:767px) {
+	.Area_coupon {
+		height: 100%;
+	}
+
+	.Area_coupon .PD_layout {}
+
+	.Area_coupon .layout_coupon ul {
+		width: 100% !important;
+		margin: 0 auto !important;
+	}
+
+	.Area_coupon .box {
+		margin-bottom: 6vw;
+		margin-top: 0;
+	}
+
+	/**區標**/
+	.Area_coupon .text {
+		width: 100%;
+		margin: auto;
+		padding-top: 0vw;
+		width: 100%;
+		margin: 0px auto 0 auto;
+		background: url(item_text_001.png)top center no-repeat;
+		background-size: 100%;
+	}
+
+	.Area_coupon .text .PD_layout .PD_into {
+		color: #fff;
+		position: relative;
+		margin-top: 0;
+	}
+
+	.Area_coupon .text .PD_layout .PD_into .PD_logo {
+		width: 33%;
+	}
+
+	.Area_coupon .text .PD_layout .PD_into h3 {
+		width: 100%;
+		font-size: 1.5em;
+		line-height: 1em;
+		color: #000;
+		text-align: center;
+	}
+
+	.Area_coupon .text .PD_layout .PD_into h5 {
+		font: bold 6vw/0vw "微軟正黑體", "Microsoft JhengHei", Arial, Helvetica;
+		margin-top: 13.5vw;
+		margin-left: 2vw;
+	}
+
+}
+
+
+/*當紅爆款 霸氣登場*/
+
+@media screen and (min-width:768px) {
+
+	.Area_item {
+		margin-bottom: 30px;
+	}
+
+	/**區標**/
+	.Area_item .text {
+		width: 63%;
+		margin: 0px auto;
+		background: url(item_text_001.png)top center no-repeat;
+		background-size: 100%;
+	}
+
+	.Area_item .text .PD_layout .PD_into {
+		color: #000;
+		position: relative;
+	}
+
+	.Area_item .text .PD_layout .PD_into .PD_logo {
+		width: 33%;
+	}
+
+	.Area_item .text .PD_layout .PD_into h3 {
+		width: 100%;
+		font-size: 1.5em;
+		line-height: 1em;
+		color: #000;
+		text-align: center;
+	}
+
+	.Area_item .text .PD_layout .PD_into h5 {
+		font: bold 43px/56px "微軟正黑體", "Microsoft JhengHei", Arial, Helvetica;
+		margin-top: 24px;
+		margin-left: 34px;
+		margin-bottom: 32px;
+	}
+
+	.Area_item .PD_box ul {
+		padding: 2px 50px;
+		grid-gap: 20px 0;
+		margin-bottom: 65px;
+	}
+
+	.Area_item .PD_box ul li .PD_img {
+		position: relative;
+		z-index: 1;
+		padding: 0;
+	}
+
+	.Area_item .PD_box ul li .PD_into {
+		position: relative;
+		background: #00000000;
+		border-radius: 20px;
+		width: 70%;
+		margin: -50px auto 0;
+		padding: 2em 1em;
+		z-index: 2;
+	}
+
+	.Area_item .PD_box ul li .PD_into h3 {
+		color: #fff;
+		font-size: 26px;
+		background: #000;
+		border-radius: 50px;
+	}
+
+	/* .Area_item .PD_box ul  li:is(:nth-child(3),:nth-child(4),:nth-child(7),:nth-child(8)) .PD_into h3{background-color: #d6001c;} */
+	.Area_item .PD_box ul li .PD_into h4 {
+		font-size: 22px;
+		color: #000;
+	}
+
+	.Area_item .PD_box ul li .PD_into p {
+		height: 2.5em;
+		color: #d6001c;
+	}
+
+	.Area_item .PD_box ul li .PD_into p del {
+		font-size: 22px;
+		color: #000;
+	}
+
+	.Area_item .PD_box ul li .PD_into p b {
+		font-size: 20px;
+	}
+
+	.Area_item .PD_box ul li .PD_into p .money {
+		font-size: 22px;
+	}
+
+	.Area_item .PD_box ul li .PD_into p .Price {
+		font-size: 40px;
+	}
+
+	.Area_item .PD_box ul li .PD_into p small {
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width:767px) {
+	.Area_item {
+		margin-bottom: 7vw;
+	}
+
+	/**區標**/
+	.Area_item .text {
+		width: 100%;
+		margin: auto;
+		padding-top: 0vw;
+		width: 100%;
+		margin: 0px auto 0 auto;
+		background: url(item_text_001.png)top center no-repeat;
+		background-size: 100%;
+	}
+
+	.Area_item .text .PD_layout .PD_into {
+		color: #fff;
+		position: relative;
+		margin-top: 0;
+	}
+
+	.Area_item .text .PD_layout .PD_into .PD_logo {
+		width: 33%;
+	}
+
+	.Area_item .text .PD_layout .PD_into h3 {
+		width: 100%;
+		font-size: 1.5em;
+		line-height: 1em;
+		color: #fff;
+		text-align: center;
+	}
+
+	.Area_item .text .PD_layout .PD_into h5 {
+		font: bold 6vw/0vw "微軟正黑體", "Microsoft JhengHei", Arial, Helvetica;
+		margin-top: 13.5vw;
+		margin-left: 2vw;
+	}
+
+	.Area_item .PD_box ul {
+		padding: 0;
+		grid-gap: 0 !important;
+		margin-bottom: 5vw;
+	}
+
+	.Area_item .PD_box ul li:nth-child(even) {}
+
+	.Area_item .PD_box ul li .PD_img {
+		z-index: 3;
+	}
+
+	.Area_item .PD_box ul li .PD_into {
+		border-radius: 10px;
+		width: 90%;
+		margin: -3vw auto 0;
+		padding: 0.8em 0.4em;
+		z-index: 2;
+		background-color: #ffffff00;
+	}
+
+	.Area_item .PD_box ul li .PD_into h3 {
+		font-size: 16px;
+		font-weight: bold;
+		color: #fff;
+		border-radius: 20vw;
+		background: #000;
+	}
+
+	.Area_item .PD_box ul li .PD_into h4 {
+		font-size: 15px;
+		color: #000;
+		;
+	}
+
+	.Area_item .PD_box ul li .PD_into p {
+		height: 1.875em;
+		color: #d6001c;
+	}
+
+	.Area_item .PD_box ul li .PD_into p del {
+		font-size: 11px;
+		color: #000;
+	}
+
+	.Area_item .PD_box ul li .PD_into p b {
+		font-size: 14px;
+	}
+
+	.Area_item .PD_box ul li .PD_into p .money {
+		font-size: 16px;
+	}
+
+	.Area_item .PD_box ul li .PD_into p .Price {
+		font-size: 28px;
+	}
+
+	.Area_item .PD_box ul li .PD_into p small {
+		font-size: 12px;
+	}
+}
+
+
+
+/* 今日最低價*/
+@media screen and (min-width:768px) {
+	.Area_discount03 {
+		height: 100%;
+	}
+
+	.Area_discount03 .box {
+		position: relative;
+		margin-bottom: 50px;
+		width: 95%;
+		margin: 1px auto 85px auto;
+	}
+
+	/* .Area_discount03 .box .PD_layout ul{border-radius: 3px;} */
+
+
+	/**區標**/
+	.Area_discount03 .text {
+		width: 63%;
+		margin: 0px auto;
+		background: url(item_text_001.png)top center no-repeat;
+		background-size: 100%;
+	}
+
+	.Area_discount03 .text .PD_layout .PD_into {
+		color: #fff;
+		position: relative;
+	}
+
+	.Area_discount03 .text .PD_layout .PD_into .PD_logo {
+		width: 33%;
+	}
+
+	.Area_discount03 .text .PD_layout .PD_into h3 {
+		width: 100%;
+		font-size: 1.5em;
+		line-height: 1em;
+		color: #000;
+		text-align: center;
+	}
+
+	.Area_discount03 .text .PD_layout .PD_into h5 {
+		font: bold 43px/107px "微軟正黑體", "Microsoft JhengHei", Arial, Helvetica;
+		margin-top: 0px;
+		margin-left: 34px;
+		margin-bottom: 0;
+	}
+
+	/** 公版 **/
+	.Area_discount03 .box {
+		position: relative;
+		width: 100%;
+		margin: 0 auto 60px;
+		/* background-color: #0000008c; */
+		border-radius: 27px;
+	}
+
+	.Area_discount03 .box .PD_layout ul {
+		width: 97%;
+		/**grid-gap: 0.4em;**/
+		background-color: #fff;
+		margin-top: 49px;
+		margin-bottom: -43px;
+	}
+
+	.Area_discount03 .box .PD_layout ul li {}
+
+	/**公版入稿**/
+	.Area_discount03 .box .layout_PD {
+		padding-bottom: 19px;
+		width: 90%;
+		margin-top: -45px;
+	}
+}
+
+@media screen and (max-width:767px) {
+
+	.Area_discount03 {}
+
+	.Area_discount03 .box {
+		position: relative;
+	}
+
+	.Area_discount03 .box .PD_layout ul {
+		border-radius: 3vw;
+		width: 100%;
+	}
+
+
+	/**區標**/
+	.Area_discount03 .text {
+		width: 100%;
+		margin: auto;
+		padding-top: 0vw;
+		width: 100%;
+		margin: 0px auto 0 auto;
+		background: url(item_text_001.png)top center no-repeat;
+		background-size: 100%;
+	}
+
+	.Area_discount03 .text .PD_layout .PD_into {
+		color: #fff;
+		position: relative;
+		margin-top: 0vw;
+	}
+
+	.Area_discount03 .text .PD_layout .PD_into .PD_logo {
+		width: 33%;
+	}
+
+	.Area_discount03 .text .PD_layout .PD_into h3 {
+		width: 100%;
+		font-size: 1.5em;
+		line-height: 1em;
+		color: #000;
+		text-align: center;
+	}
+
+	.Area_discount03 .text .PD_layout .PD_into h5 {
+		font: bold 6vw/6vw "微軟正黑體", "Microsoft JhengHei", Arial, Helvetica;
+		margin-top: 10.5vw;
+		margin-left: 2vw;
+		margin-bottom: 0;
+	}
+
+	/** 公版 **/
+	.Area_discount03 .box {
+		/* background-color: #00000094; */
+		padding-top: 2vw;
+		width: 100%;
+		margin: 0 auto;
+		padding-bottom: 4vw;
+		border-radius: 3vw;
+	}
+
+	.Area_discount03 .box .PD_layout ul {
+		width: 94%;
+		/**grid-gap: 0.4em;**/
+		margin-top: -1vw;
+		padding-top: 2vw;
+		padding-bottom: 3vw;
+		background-color: #fff;
+	}
+
+	.Area_discount03 .box .PD_layout ul li {}
+}
+
+
+
+/*移除公版設定*/
+.Area .remove_box_style ul {
+	background-color: transparent;
+	grid-gap: 1vw;
+}
+
+.Area .remove_box_style ul li {
+	border: none !important;
+	list-style: none;
+}
+
+@media screen and (max-width:767px) {
+	.Area .remove_box_style ul {
+		width: 100%;
+	}
+}
+
+/*輪播移除公版設定*/
+.Area .swipwe_remove_box_style ul {
+	background-color: transparent;
+	grid-gap: 0;
+}
+
+.Area .swipwe_remove_box_style ul li {
+	border: none !important;
+	background-color: #fff;
+}
+
+.Area .swipwe_remove_box_style ul li,
+.Area .swipwe_remove_box_style ul li .PD_img img {
+	border-radius: 0px;
+}
+
+.Area .swipwe_remove_box_style ul li .PD p {
+	color: #a36008;
+}
+
+
+@media screen and (max-width:767px) {
+	.Area .swipwe_remove_box_style ul {
+		width: 100%;
+		grid-gap: 0;
+	}
+}
+
+
+
+
+/*區塊_all*/
+.Area2000 {
+	margin: 0 auto;
+	width: 100%;
+}
+
+.Area2000 img {
+	width: 100%;
+}
+
+.Area1220 {
+	margin: 0 auto;
+	width: 1220px;
+}
+
+.Area960 {
+	margin: 0 auto;
+	width: 960px;
+}
+
+.Area {
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.Area a {
+	position: relative;
+	display: block;
+}
+
+.Area .go_bt {
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-ms-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+.Area .go_bt:hover {
+	-webkit-transform: scale(0.95);
+	-moz-transform: scale(0.95);
+	-ms-transform: scale(0.95);
+	-o-transform: scale(0.95);
+	transform: scale(0.95);
+}
+
+
+.WRAPPER .go_bt1 {
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-ms-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+.WRAPPER .go_bt1:hover {
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	-ms-transform: translateY(-10px);
+	-o-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+
+
+@media screen and (max-width:767px) {
+	.Area1220 {
+		width: 100%;
+	}
+
+	.Area960 {
+		width: 100%;
+	}
+
+	.Area .go_bt:hover {
+		-webkit-transform: none;
+		-moz-transform: none;
+		-ms-transform: none;
+		-o-transform: none;
+		transform: none;
+	}
+
+
+}
+
+
+/*隱鑶*/
+.for_pc {}
+
+.for_phone {
+	display: none !important;
+}
+
+@media screen and (max-width:767px) {
+	.for_pc {
+		display: none !important;
+	}
+
+	.for_phone {
+		display: inherit !important;
+	}
+}
+
+.Area_discount03 .box .PD_wrapper,
+.Area_sale .PD_box .PD_wrapper :hover {
+	/* border: 2px solid #a595aa; */
+	filter: drop-shadow(0 0 10px #faffce1a);
+}
+
+/* 灑花 */
+  #osmanthus-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    overflow: hidden;
+  }
+ 
+  .petal {
+    position: absolute;
+    top: -6%;
+    will-change: transform, top, opacity;
+  }
+ 
+  .sparkle {
+    position: absolute;
+    top: -6%;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,244,214,0.95) 0%, rgba(255,224,150,0.4) 60%, transparent 100%);
+    pointer-events: none;
+    will-change: transform, top, opacity;
+  }
+ 
+  .cursor-sparkle {
+    position: fixed;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 10000;
+    will-change: transform, opacity;
+  }
+ 
+  .demo-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding-top: 40vh;
+    color: #6b4a24;
+  }
+ 
+  .demo-content h1 {
+    font-size: 2rem;
+    letter-spacing: 0.3em;
+    text-shadow: 0 1px 2px rgba(255,255,255,0.6);
+  }
